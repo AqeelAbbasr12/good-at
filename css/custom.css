@@ -27,9 +27,17 @@ body {
   width: 150px;
   border-radius: 30px;
 }
+.top-banner .banner .left-image .home-image{
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 100px;
+}
 .banner .left-image .garden-image{
-  margin-left: -320px;
+  margin-left: -308px;
   margin-top: -78px;
+  position: relative;
+  z-index: 2;
 }
 .banner .garden-image , .banner .home-image{
   opacity: .7;
@@ -41,10 +49,18 @@ body {
   width: 150px;
   border-radius: 30px;
 }
+/* .banner .right-image .home-image{
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  right: 100px;
+} */
 .banner .right-image .garden-image{
-  margin-right: -320px;
+  margin-right: -308px;
   margin-top: -78px;
   opacity: .7;
+  position: relative;
+  z-index: 2;
 }
 .banner .right-image .garden-image:hover{
   opacity: 1;
@@ -91,6 +107,7 @@ body {
 }
 .nearby-section .section-title{
   /* padding: 0 26px; */
+  font-weight: 700;
 }
 .nearby-section .nav-tabs{
   border-bottom: 0;
@@ -146,13 +163,24 @@ body {
   border-radius: 15px;
   height: 100%;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .card .card-body {
   padding: 25px;
 }
+.nearby-section .card .card-body .card-image{
+  height:156px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.available-section .card .card-body .card-image{
+  height:200px;
+  overflow: hidden;
+  margin-top: 15px;
+}
 .card .card-body .card-image{
-  height: 200px;
+  height:200px;
   overflow: hidden;
   margin-top: 15px;
 }
@@ -198,6 +226,10 @@ body {
   color: #998A38;
   font-weight: 600;
 }
+.title-col{
+  position: relative;
+  z-index: 1;
+}
 .available-section .tab-content .badge-block .badge {
   background-color: #EACE3C;
 }
@@ -212,7 +244,7 @@ body {
   left: 0;
   bottom: 0;
   height: 10px; 
-  width: 100%;
+  width: 85%;
   background-color: #fff;
   z-index: -1; 
 }
@@ -371,6 +403,9 @@ body {
   color: #333333;
   margin-top: 10px;
 }
+.professional-section .highlight::after{
+  width: 60%;
+}
 /* Customer Section */
 .customer-section .highlights-text {
   position: relative;
@@ -432,7 +467,7 @@ body {
 footer h5.site-title {
   font-weight: 900;
   color: #A4A4A4;
-  font-size: 22px;
+  font-size: 30px;
 }
 footer .row .col-md-8 ul li{
   color: #808080;
@@ -518,6 +553,11 @@ footer .custom-btn:hover {
 .carousel-inner .carousel-item.active .col-md-4:nth-child(3){
   padding-right: 0px;
 }
+@media (max-width: 768px) {
+  .banner .left-image, .banner .right-image{
+    display: none !important;
+  }
+}
 @media (max-width: 767px) {
   .carousel-inner .carousel-item > div {
       display: none;
@@ -534,14 +574,27 @@ footer .custom-btn:hover {
   .carousel-inner .carousel-item.active{
     display: block !important;
   }
+  .carousel-inner .carousel-item.carousel-item-next{
+    display: block !important;
+  }
   .zigzag-col{
     position: relative !important;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 100px;
+    margin-top: 30px;
   }
   .nearby-section .tab-content .badge-block .badge{
     margin-bottom: 10px;
+  }
+  .main-ad-section .banner{
+    margin-top: 10px;
+  }
+  .banner h1{
+    font-size: 26px;
+  }
+  .main-ad-section .banner h1{
+    font-size: 20px;
   }
 }
 /* medium and up screens */
@@ -549,19 +602,49 @@ footer .custom-btn:hover {
   
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
-    transform: translateX(25%);
+    transition-duration: 2s;
   }
   
   .carousel-inner .carousel-item-start.active, 
   .carousel-inner .carousel-item-prev {
-    transform: translateX(-25%);
+    transition-duration: 2s;
   }
   .main-ad-section{
     margin-top: 120px;
+  }
+  .banner h1{
+    font-size: 45px;
+  }
+  .main-ad-section .banner h1{
+    font-size: 40px;
+  }
+}
+@media (max-width:1100px) { 
+  .service-carousel .carousel-control-prev{
+    left: -21px;
+    width: 3%;
+  }
+  .service-carousel .carousel-control-next{
+    right: -21px;
+    width: 3%;
+  }
+}
+@media (min-width: 1700px) {
+  .banner .left-image .garden-image{
+    margin-right: 6rem;
+  }
+  .banner .left-image .home-image{
+    margin-right: 10rem !important;
+  }
+  .banner .right-image .home-image{
+    margin-left: 9rem !important;
+  }
+  .banner .right-image .garden-image{
+    margin-left: 6rem;
   }
 }
 
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start { 
-transform: translateX(0);
+transition-duration: 2s;
 }

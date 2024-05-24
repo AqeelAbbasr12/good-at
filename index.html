@@ -17,7 +17,7 @@
       <div class="container">
         <a class="navbar-brand" href="#">
           <!-- <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-          Good @
+          Good@
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle pe-md-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <img src="images/profile1.jpg" alt="Profile" width="35" height="35" class="rounded-circle">
-                  <span>Chris Bailey</span>
+                  <span class="ps-2">Chris Bailey</span>
               </a>
                 <ul class="dropdown-menu dropdown-menu-end shadow p-4" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item ps-0" href="#"><i class="far fa-user pe-2"></i> My Account</a></li>
@@ -55,51 +55,14 @@
           </ul>
         </div>
       </div>
-      <div class="modal fade service-modal" id="addServiceModal" tabindex="-1" aria-labelledby="addServiceModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="row mb-4">
-                <div class="col">
-                  <h1 class="text-center mb-md-5">Listing a  service or task?</h1>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-md-4">
-                  <div class="service-content text-center">
-                    <span>
-                      <i class="fas fa-clipboard-check fa-2x"></i>
-                    </span>
-                    <div class="content mt-5">
-                      <h3>List a service</h3>
-                      <p> If you are a service provider and want to show your services to the customers.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="service-content text-center">
-                    <span>
-                      <i class="fas fa-clipboard-check fa-2x"></i>
-                    </span>
-                    <div class="content mt-5">
-                      <h3>List a task</h3>
-                      <p> If you are a customer and looking for someone to do a task for you.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </nav>
 
     <!-- Banner Section -->
-    <div class="container-fluid mt-5 px-md-5">
+    <div class="container-fluid mt-5 px-md-5 top-banner">
       <div class="banner text-dark p-5 position-relative overflow-hidden">
         <div class="row align-items-end">
           <div class="col-md-3">
-            <div class="left-image position-relative d-none d-md-block">
+            <div class="left-image d-none d-md-block">
               <div class="home-image text-center me-5">
                 <img src="images/home-cleaning.jpg" class="image" />
                 <p class="text-white text-uppercase pt-2 fw-bold">Home Cleaning</p>
@@ -112,11 +75,11 @@
             </div>
           </div>
           <div class="col-md-6 text-center">
-            <h1 class="display-4 fw-bold">Welcome to Good at</h1>
-            <p class="lead fw-normal">All the services you need in just <span class="rounded pb-1 px-2 text-white ">one place!</span></p>
+            <h1 class="fw-bold">Welcome to Good at</h1>
+            <p class="lead fw-normal">All the services you need in just <span class="rounded pb-1 px-2 text-white text-nowrap">one place!</span></p>
           </div>
           <div class="col-md-3">
-            <div class="right-image position-relative d-none d-md-block">
+            <div class="right-image d-none d-md-block">
               <div class="home-image text-center ms-5">
                 <img src="images/home-cleaning.jpg" class="image" />
                 <p class="text-white text-uppercase pt-2 fw-bold">Home Cleaning</p>
@@ -131,28 +94,28 @@
         </div>
         <div class="container">
           <div class="row mt-4">
-            <div class="col-md-7">
+            <div class="col-md-7 col-lg-7">
               <div class="input-group input-field mb-3">
                 <span><i class="fas fa-search"></i></span>
                 <input type="text" class="form-control py-3 rounded-pill position-relative ps-5 border-0 shadow" placeholder="Search for service" aria-label="Search">
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-5 col-lg-3">
               <div class="input-group input-field flex-nowrap mb-3">
                 <span><i class="fas fa-map-marker-alt"></i></span>
                 <input type="text" class="form-control py-3 rounded-pill ps-5 border-0 shadow" placeholder="City" aria-label="Location" aria-describedby="location-icon">
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-12 col-lg-2 text-center">
               <div class="search-btn">
-                <button class="btn btn-dark py-3 px-5 rounded-pill border-0 shadow" type="button"><i class="fas fa-search"></i> Search</button>
+                <button class="btn btn-dark py-3 px-lg-2 rounded-pill border-0 shadow w-100" type="button"><i class="fas fa-search"></i> Search</button>
               </div>
             </div>
           </div>
-          <div class="row pt-1  px-md-5">
+          <div class="row pt-1  px-md-5 d-none d-md-flex">
             <div class="col">
               <div class="sub-content">
-                <p class="ms-4">Popular: House Cleaning, Gardening, Plumbing, Electric Work.</p>
+                <p>Popular: House Cleaning, Gardening, Plumbing, Electric Work.</p>
               </div>
             </div>
           </div>
@@ -175,7 +138,7 @@
             <button class="nav-link" id="homeCaring-tab" data-bs-toggle="tab" data-bs-target="#homeCaring" type="button" role="tab" aria-controls="homeCaring" aria-selected="false">Home Caring</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="artistic" data-bs-toggle="tab" data-bs-target="#artistic" type="button" role="tab" aria-controls="artistic" aria-selected="false">Artistic</button>
+            <button class="nav-link" id="artistic-tab" data-bs-toggle="tab" data-bs-target="#artistic" type="button" role="tab" aria-controls="artistic" aria-selected="false">Artistic</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="cooking-tab" data-bs-toggle="tab" data-bs-target="#cooking" type="button" role="tab" aria-controls="cooking" aria-selected="false">Cooking / Baking</button>
@@ -317,7 +280,7 @@
               </div>
             </div>
             <div class=" text-center mt-5">
-              <div class="row mx-auto my-auto justify-content-center">
+              <div class="row my-auto justify-content-center">
                   <div id="caringCarousel" class="carousel slide service-carousel" data-bs-ride="carousel">
                       <div class="carousel-inner pb-4" role="listbox">
                           <div class="carousel-item active">
@@ -436,7 +399,7 @@
               </div>
             </div>
             <div class=" text-center mt-5">
-              <div class="row mx-auto my-auto justify-content-center">
+              <div class="row my-auto justify-content-center">
                   <div id="artisticCarousel" class="carousel slide service-carousel" data-bs-ride="carousel">
                       <div class="carousel-inner pb-4" role="listbox">
                           <div class="carousel-item active">
@@ -666,7 +629,7 @@
     <section class="nearby-section available-section">
       <div class="container mt-5 ">
         <div class="row">
-          <div class="col">
+          <div class="col title-col">
             <h4 class="section-title"><span class="highlight">Available</span> tasks around</h4>
           </div>
         </div>
@@ -678,7 +641,7 @@
             <button class="nav-link" id="availableHomeCaring-tab" data-bs-toggle="tab" data-bs-target="#availableHomeCaring" type="button" role="tab" aria-controls="availableHomeCaring" aria-selected="false">Home Caring</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="availableArtistic" data-bs-toggle="tab" data-bs-target="#availableArtistic" type="button" role="tab" aria-controls="availableArtistic" aria-selected="false">Artistic</button>
+            <button class="nav-link" id="availableArtistic-tab" data-bs-toggle="tab" data-bs-target="#availableArtistic" type="button" role="tab" aria-controls="availableArtistic" aria-selected="false">Artistic</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="availableCooking-tab" data-bs-toggle="tab" data-bs-target="#availableCooking" type="button" role="tab" aria-controls="availableCooking" aria-selected="false">Cooking / Baking</button>
@@ -825,19 +788,21 @@
                                         <img src="https://source.unsplash.com/300x300/?perth,australia" class="card-img-top" alt="Plumbing">
                                         <i class="far fa-heart ms-auto fa-lg"></i>
                                       </div>
-                                      <p class="card-text text-start">Consectetur neque lobortis</p>
-                                      <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
-                                      <p class="text-start">
-                                          <span class="rating-stars">
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="far fa-star"></i>
-                                          </span>
-                                          (4.0)
-                                      </p>
-                                      <p class="text-start mb-0 fw-normal">Plumbing</p>
+                                      <div class="card-body-content">
+                                        <p class="card-text text-start">Consectetur neque lobortis</p>
+                                        <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
+                                        <p class="text-start">
+                                            <span class="rating-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                            (4.0)
+                                        </p>
+                                        <p class="text-start mb-0 fw-normal">Plumbing</p>
+                                      </div>
                                   </div>
                               </div>
                               </div>
@@ -850,19 +815,21 @@
                                         <img src="https://source.unsplash.com/300x300/?perth,australia" class="card-img-top" alt="Plumbing">
                                         <i class="far fa-heart ms-auto fa-lg"></i>
                                       </div>
-                                      <p class="card-text text-start">Consectetur neque lobortis</p>
-                                      <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
-                                      <p class="text-start">
-                                          <span class="rating-stars">
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="far fa-star"></i>
-                                          </span>
-                                          (4.0)
-                                      </p>
-                                      <p class="text-start mb-0 fw-normal">Painting</p>
+                                      <div class="card-body-content">
+                                        <p class="card-text text-start">Consectetur neque lobortis</p>
+                                        <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
+                                        <p class="text-start">
+                                            <span class="rating-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                            (4.0)
+                                        </p>
+                                        <p class="text-start mb-0 fw-normal">Painting</p>
+                                      </div>  
                                   </div>
                               </div>
                               </div>
@@ -875,19 +842,21 @@
                                         <img src="https://source.unsplash.com/300x300/?perth,australia" class="card-img-top" alt="Plumbing">
                                         <i class="far fa-heart ms-auto fa-lg"></i>
                                       </div>
-                                      <p class="card-text text-start">Consectetur neque lobortis</p>
-                                      <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
-                                      <p class="text-start">
-                                          <span class="rating-stars">
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="far fa-star"></i>
-                                          </span>
-                                          (4.0)
-                                      </p>
-                                      <p class="text-start mb-0 fw-normal">Gardening</p>
+                                      <div class="card-body-content">
+                                        <p class="card-text text-start">Consectetur neque lobortis</p>
+                                        <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
+                                        <p class="text-start">
+                                            <span class="rating-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                            (4.0)
+                                        </p>
+                                        <p class="text-start mb-0 fw-normal">Gardening</p>
+                                      </div>
                                   </div>
                               </div>
                               </div>
@@ -932,19 +901,21 @@
                                         <img src="https://source.unsplash.com/300x300/?perth,australia" class="card-img-top" alt="Plumbing">
                                         <i class="far fa-heart ms-auto fa-lg"></i>
                                       </div>
-                                      <p class="card-text text-start">Consectetur neque lobortis</p>
-                                      <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
-                                      <p class="text-start">
-                                          <span class="rating-stars">
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="far fa-star"></i>
-                                          </span>
-                                          (4.0)
-                                      </p>
-                                      <p class="text-start mb-0 fw-normal">Plumbing</p>
+                                      <div class="card-body-content">
+                                        <p class="card-text text-start">Consectetur neque lobortis</p>
+                                        <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
+                                        <p class="text-start">
+                                            <span class="rating-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                            (4.0)
+                                        </p>
+                                        <p class="text-start mb-0 fw-normal">Plumbing</p>
+                                      </div>  
                                   </div>
                               </div>
                               </div>
@@ -957,19 +928,21 @@
                                         <img src="https://source.unsplash.com/300x300/?perth,australia" class="card-img-top" alt="Plumbing">
                                         <i class="far fa-heart ms-auto fa-lg"></i>
                                       </div>
-                                      <p class="card-text text-start">Consectetur neque lobortis</p>
-                                      <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
-                                      <p class="text-start">
-                                          <span class="rating-stars">
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="far fa-star"></i>
-                                          </span>
-                                          (4.0)
-                                      </p>
-                                      <p class="text-start mb-0 fw-normal">Painting</p>
+                                      <div class="card-body-content">
+                                        <p class="card-text text-start">Consectetur neque lobortis</p>
+                                        <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
+                                        <p class="text-start">
+                                            <span class="rating-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                            (4.0)
+                                        </p>
+                                        <p class="text-start mb-0 fw-normal">Painting</p>
+                                      </div>
                                   </div>
                               </div>
                               </div>
@@ -982,19 +955,21 @@
                                         <img src="https://source.unsplash.com/300x300/?perth,australia" class="card-img-top" alt="Plumbing">
                                         <i class="far fa-heart ms-auto fa-lg"></i>
                                       </div>
-                                      <p class="card-text text-start">Consectetur neque lobortis</p>
-                                      <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
-                                      <p class="text-start">
-                                          <span class="rating-stars">
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="far fa-star"></i>
-                                          </span>
-                                          (4.0)
-                                      </p>
-                                      <p class="text-start mb-0 fw-normal">Gardening</p>
+                                      <div class="card-body-content">
+                                        <p class="card-text text-start">Consectetur neque lobortis</p>
+                                        <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
+                                        <p class="text-start">
+                                            <span class="rating-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                            (4.0)
+                                        </p>
+                                        <p class="text-start mb-0 fw-normal">Gardening</p>
+                                      </div>  
                                   </div>
                               </div>
                               </div>
@@ -1039,19 +1014,21 @@
                                         <img src="https://source.unsplash.com/300x300/?perth,australia" class="card-img-top" alt="Plumbing">
                                         <i class="far fa-heart ms-auto fa-lg"></i>
                                       </div>
-                                      <p class="card-text text-start">Consectetur neque lobortis</p>
-                                      <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
-                                      <p class="text-start">
-                                          <span class="rating-stars">
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="far fa-star"></i>
-                                          </span>
-                                          (4.0)
-                                      </p>
-                                      <p class="text-start mb-0 fw-normal">Plumbing</p>
+                                      <div class="card-body-content">
+                                        <p class="card-text text-start">Consectetur neque lobortis</p>
+                                        <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
+                                        <p class="text-start">
+                                            <span class="rating-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                            (4.0)
+                                        </p>
+                                        <p class="text-start mb-0 fw-normal">Plumbing</p>
+                                      </div>
                                   </div>
                               </div>
                               </div>
@@ -1064,19 +1041,21 @@
                                         <img src="https://source.unsplash.com/300x300/?perth,australia" class="card-img-top" alt="Plumbing">
                                         <i class="far fa-heart ms-auto fa-lg"></i>
                                       </div>
-                                      <p class="card-text text-start">Consectetur neque lobortis</p>
-                                      <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
-                                      <p class="text-start">
-                                          <span class="rating-stars">
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="far fa-star"></i>
-                                          </span>
-                                          (4.0)
-                                      </p>
-                                      <p class="text-start mb-0 fw-normal">Painting</p>
+                                      <div class="card-body-content">
+                                        <p class="card-text text-start">Consectetur neque lobortis</p>
+                                        <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
+                                        <p class="text-start">
+                                            <span class="rating-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                            (4.0)
+                                        </p>
+                                        <p class="text-start mb-0 fw-normal">Painting</p>
+                                      </div>  
                                   </div>
                               </div>
                               </div>
@@ -1089,19 +1068,21 @@
                                         <img src="https://source.unsplash.com/300x300/?perth,australia" class="card-img-top" alt="Plumbing">
                                         <i class="far fa-heart ms-auto fa-lg"></i>
                                       </div>
-                                      <p class="card-text text-start">Consectetur neque lobortis</p>
-                                      <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
-                                      <p class="text-start">
-                                          <span class="rating-stars">
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="fas fa-star"></i>
-                                              <i class="far fa-star"></i>
-                                          </span>
-                                          (4.0)
-                                      </p>
-                                      <p class="text-start mb-0 fw-normal">Gardening</p>
+                                      <div class="card-body-content">
+                                        <p class="card-text text-start">Consectetur neque lobortis</p>
+                                        <p class="text-muted text-start price-block"><span>Start from $10 ~ $20</span></p>
+                                        <p class="text-start">
+                                            <span class="rating-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                            (4.0)
+                                        </p>
+                                        <p class="text-start mb-0 fw-normal">Gardening</p>
+                                      </div>  
                                   </div>
                               </div>
                               </div>
@@ -1230,7 +1211,7 @@
     <section class="nearby-section professional-section">
       <div class="container mt-5">
         <div class="row">
-          <div class="col">
+          <div class="col title-col">
             <h4 class="section-title"><span class="highlight">Professional</span> around you</h4>
           </div>
         </div>
@@ -1243,7 +1224,7 @@
               <button class="nav-link" id="professionalHomeCaring-tab" data-bs-toggle="tab" data-bs-target="#professionalHomeCaring" type="button" role="tab" aria-controls="professionalHomeCaring" aria-selected="false">Home Caring</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="professionalArtistic" data-bs-toggle="tab" data-bs-target="#professionalArtistic" type="button" role="tab" aria-controls="professionalArtistic" aria-selected="false">Artistic</button>
+              <button class="nav-link" id="professionalArtistic-tab" data-bs-toggle="tab" data-bs-target="#professionalArtistic" type="button" role="tab" aria-controls="professionalArtistic" aria-selected="false">Artistic</button>
             </li>
             <li class="nav-item" role="presentation">
               <button class="nav-link" id="professionalCooking-tab" data-bs-toggle="tab" data-bs-target="#professionalCooking" type="button" role="tab" aria-controls="professionalCooking" aria-selected="false">Cooking / Baking</button>
@@ -1927,7 +1908,7 @@
     <footer class="bg-white py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-2 mb-3 d-flex align-items-center justify-content-center">
+          <div class="col-md-2 mb-3 d-flex align-items-center">
             <h5 class="font-weight-bold site-title">Good at</h5>
           </div>
           <div class="col-md-8">
@@ -1980,7 +1961,44 @@
         </div>
       </div>
     </footer>
-
+    <!-- Service Modal -->
+    <div class="modal fade service-modal" id="addServiceModal" tabindex="-1" aria-labelledby="addServiceModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row mb-4">
+              <div class="col">
+                <h1 class="text-center mb-md-5">Listing a  service or task?</h1>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <div class="service-content text-center">
+                  <span>
+                    <i class="fas fa-clipboard-check fa-2x"></i>
+                  </span>
+                  <div class="content mt-5">
+                    <h3>List a service</h3>
+                    <p> If you are a service provider and want to show your services to the customers.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-content text-center">
+                  <span>
+                    <i class="fas fa-clipboard-check fa-2x"></i>
+                  </span>
+                  <div class="content mt-5">
+                    <h3>List a task</h3>
+                    <p> If you are a customer and looking for someone to do a task for you.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
