@@ -12,8 +12,14 @@
 
 ## About
 
-Restaurant React Native Expo App is a food delivery app designed for a single business, providing a seamless experience for customers to order their favorite meals and have them delivered right to their doorstep. Built with React Native and Expo, this app is tailored to enhance the customer experience by offering a user-friendly interface, real-time order tracking, and efficient delivery management.
+This project is a landing page designed using Bootstrap, a popular front-end framework. The landing page features several key sections to showcase services, professionals, available tasks, customer testimonials, and more. The goal is to provide a visually appealing and user-friendly interface for visitors.
 
+###Technologies Used
+- Bootstrap: The main framework used for designing and developing the landing page.
+- HTML5: For the structure and content of the page.
+- CSS3: For styling and layout enhancements.
+- JavaScript/jQuery: For interactivity and carousel functionality.
+  
 ## Getting Started
 
 To get a local copy up and running, follow these simple steps.
@@ -53,16 +59,16 @@ Project Link: [https://github.com/AqeelAbbasr12/good-at](https://github.com/Aqee
 
 ## Project Images:
 
-![restaurant-app (3)](https://github.com/AqeelAbbasr12/restaurant-reactnative-expo-app/assets/128492655/1c45beab-13a2-4ba9-b2f2-1daff33466a7)
-![restaurant-app (5)](https://github.com/AqeelAbbasr12/restaurant-reactnative-expo-app/assets/128492655/3493d858-e315-43b6-a9f8-6a6c50554eea)
-![restaurant-app (4)](https://github.com/AqeelAbbasr12/restaurant-reactnative-expo-app/assets/128492655/dcdfcd10-c834-456f-ab33-38d11ab6bd89)
-![restaurant-app (6)](https://github.com/AqeelAbbasr12/restaurant-reactnative-expo-app/assets/128492655/cde932c8-6368-48e6-a459-80a6c7173780)
-![restaurant-app (8)](https://github.com/AqeelAbbasr12/restaurant-reactnative-expo-app/assets/128492655/6c0f1610-f75b-4455-b328-6f7da4ee367b)
-![restaurant-app (7)](https://github.com/AqeelAbbasr12/restaurant-reactnative-expo-app/assets/128492655/965f4821-6b77-49a0-9612-426f69fb925e)
-![restaurant-app (1)](https://github.com/AqeelAbbasr12/restaurant-reactnative-expo-app/assets/128492655/490844e0-9269-44ca-97ef-9c2f6bf22bdd)
-![restaurant-app (9)](https://github.com/AqeelAbbasr12/restaurant-reactnative-expo-app/assets/128492655/32a1ae49-3606-4053-9ab5-db3144ee049d)
-![restaurant-app (10)](https://github.com/AqeelAbbasr12/restaurant-reactnative-expo-app/assets/128492655/fd809cce-6581-49a5-bf1b-45351c59bccf)
-![restaurant-app (2)](https://github.com/AqeelAbbasr12/restaurant-reactnative-expo-app/assets/128492655/4c620392-afe7-4906-89dd-f88fe863312e)
+![image](https://github.com/AqeelAbbasr12/good-at/assets/128492655/321986f3-393f-4856-baf4-29ee8db30376)
+![image](https://github.com/AqeelAbbasr12/good-at/assets/128492655/8055846b-f7ec-4d83-b1bf-f5a21e642ea3)
+![image](https://github.com/AqeelAbbasr12/good-at/assets/128492655/795879bc-d20b-4fe7-9557-cfa658fbf93c)
+![image](https://github.com/AqeelAbbasr12/good-at/assets/128492655/33d6a4b6-3802-41e3-861e-d4c36a992dc8)
+![image](https://github.com/AqeelAbbasr12/good-at/assets/128492655/824ad134-7c0b-4031-a659-2ebeb80108df)
+![image](https://github.com/AqeelAbbasr12/good-at/assets/128492655/8e5ed98d-3697-4c4e-9f1d-6d682ebec84c)
+![image](https://github.com/AqeelAbbasr12/good-at/assets/128492655/242019bb-d2a8-426b-a360-02f418e573bf)
+
+
+
 
 
 
