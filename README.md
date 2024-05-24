@@ -14,7 +14,7 @@
 
 This project is a landing page designed using Bootstrap, a popular front-end framework. The landing page features several key sections to showcase services, professionals, available tasks, customer testimonials, and more. The goal is to provide a visually appealing and user-friendly interface for visitors.
 
-###Technologies Used
+### Technologies Used
 - Bootstrap: The main framework used for designing and developing the landing page.
 - HTML5: For the structure and content of the page.
 - CSS3: For styling and layout enhancements.
